@@ -1,0 +1,116 @@
+2021/06/27 10:02:57 [notice] 1#1: using the "epoll" event method
+2021/06/27 10:02:57 [notice] 1#1: nginx/1.21.0
+2021/06/27 10:02:57 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/06/27 10:02:57 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/27 10:02:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/27 10:02:57 [notice] 1#1: start worker processes
+2021/06/27 10:02:57 [notice] 1#1: start worker process 31
+2021/06/27 10:02:57 [notice] 1#1: start worker process 32
+2021/06/27 10:02:57 [notice] 1#1: start worker process 33
+2021/06/27 10:02:57 [notice] 1#1: start worker process 34
+2021/06/27 10:03:34 [error] 31#31: *1 open() "/var/www/webrew/public404" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8101"
+2021/06/27 10:03:34 [error] 31#31: *1 open() "/var/www/webrew/public404" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8101", referrer: "http://localhost:8101/"
+2021/06/27 10:03:38 [error] 31#31: *1 open() "/var/www/webrew/public404" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /public/ HTTP/1.1", host: "localhost:8101"
+2021/06/27 10:03:43 [error] 31#31: *1 open() "/var/www/webrew/public404" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8101"
+2021/06/27 10:05:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/27 10:05:06 [notice] 32#32: gracefully shutting down
+2021/06/27 10:05:06 [notice] 32#32: exiting
+2021/06/27 10:05:06 [notice] 33#33: gracefully shutting down
+2021/06/27 10:05:06 [notice] 31#31: gracefully shutting down
+2021/06/27 10:05:06 [notice] 34#34: gracefully shutting down
+2021/06/27 10:05:06 [notice] 34#34: exiting
+2021/06/27 10:05:06 [notice] 32#32: exit
+2021/06/27 10:05:06 [notice] 33#33: exiting
+2021/06/27 10:05:06 [notice] 31#31: exiting
+2021/06/27 10:05:06 [notice] 31#31: exit
+2021/06/27 10:05:06 [notice] 34#34: exit
+2021/06/27 10:05:06 [notice] 33#33: exit
+2021/06/27 10:05:06 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2021/06/27 10:05:06 [notice] 1#1: worker process 32 exited with code 0
+2021/06/27 10:05:06 [notice] 1#1: signal 29 (SIGIO) received
+2021/06/27 10:05:06 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2021/06/27 10:05:06 [notice] 1#1: worker process 31 exited with code 0
+2021/06/27 10:05:06 [notice] 1#1: worker process 34 exited with code 0
+2021/06/27 10:05:06 [notice] 1#1: signal 29 (SIGIO) received
+2021/06/27 10:05:06 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2021/06/27 10:05:06 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2021/06/27 10:05:06 [notice] 1#1: worker process 33 exited with code 0
+2021/06/27 10:05:06 [notice] 1#1: exit
+2021/06/27 10:07:00 [notice] 1#1: using the "epoll" event method
+2021/06/27 10:07:00 [notice] 1#1: nginx/1.21.0
+2021/06/27 10:07:00 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/06/27 10:07:00 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/27 10:07:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/27 10:07:00 [notice] 1#1: start worker processes
+2021/06/27 10:07:00 [notice] 1#1: start worker process 31
+2021/06/27 10:07:00 [notice] 1#1: start worker process 32
+2021/06/27 10:07:00 [notice] 1#1: start worker process 33
+2021/06/27 10:07:00 [notice] 1#1: start worker process 34
+2021/06/27 10:07:27 [error] 31#31: *1 FastCGI sent in stderr: "PHP message: 2021-06-27T10:07:27+00:00 [warning] Uncaught Warning: include(/var/www/webrew/vendor/composer/../../src/Entity/User.php): Failed to open stream: No such file or directory" while reading upstream, client: 172.24.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost:8101"
+2021/06/27 10:12:16 [error] 31#31: *4 FastCGI sent in stderr: "PHP message: 2021-06-27T10:12:16+00:00 [critical] Uncaught Exception: The service "security.command.debug_firewall" has a dependency on a non-existent service "App\Security\LoginFormAuthenticator"" while reading upstream, client: 172.24.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost:8101"
+2021/06/27 10:35:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/27 10:35:25 [notice] 32#32: gracefully shutting down
+2021/06/27 10:35:25 [notice] 33#33: gracefully shutting down
+2021/06/27 10:35:25 [notice] 33#33: exiting
+2021/06/27 10:35:25 [notice] 31#31: gracefully shutting down
+2021/06/27 10:35:25 [notice] 31#31: exiting
+2021/06/27 10:35:25 [notice] 34#34: gracefully shutting down
+2021/06/27 10:35:25 [notice] 32#32: exiting
+2021/06/27 10:35:25 [notice] 33#33: exit
+2021/06/27 10:35:25 [notice] 31#31: exit
+2021/06/27 10:35:25 [notice] 34#34: exiting
+2021/06/27 10:35:25 [notice] 34#34: exit
+2021/06/27 10:35:25 [notice] 32#32: exit
+2021/06/27 10:35:25 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2021/06/27 10:35:25 [notice] 1#1: worker process 31 exited with code 0
+2021/06/27 10:35:25 [notice] 1#1: worker process 33 exited with code 0
+2021/06/27 10:35:25 [notice] 1#1: signal 29 (SIGIO) received
+2021/06/27 10:35:25 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2021/06/27 10:35:25 [notice] 1#1: worker process 34 exited with code 0
+2021/06/27 10:35:25 [notice] 1#1: signal 29 (SIGIO) received
+2021/06/27 10:35:25 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2021/06/27 10:35:25 [notice] 1#1: worker process 32 exited with code 0
+2021/06/27 10:35:25 [notice] 1#1: exit
+2021/06/27 10:44:32 [notice] 1#1: using the "epoll" event method
+2021/06/27 10:44:32 [notice] 1#1: nginx/1.21.0
+2021/06/27 10:44:32 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/06/27 10:44:32 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/27 10:44:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/27 10:44:32 [notice] 1#1: start worker processes
+2021/06/27 10:44:32 [notice] 1#1: start worker process 33
+2021/06/27 10:44:32 [notice] 1#1: start worker process 34
+2021/06/27 10:44:32 [notice] 1#1: start worker process 35
+2021/06/27 10:44:32 [notice] 1#1: start worker process 36
+2021/06/27 10:57:37 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/27 10:57:37 [notice] 33#33: gracefully shutting down
+2021/06/27 10:57:37 [notice] 33#33: exiting
+2021/06/27 10:57:37 [notice] 35#35: gracefully shutting down
+2021/06/27 10:57:37 [notice] 35#35: exiting
+2021/06/27 10:57:37 [notice] 36#36: gracefully shutting down
+2021/06/27 10:57:37 [notice] 34#34: gracefully shutting down
+2021/06/27 10:57:37 [notice] 34#34: exiting
+2021/06/27 10:57:37 [notice] 34#34: exit
+2021/06/27 10:57:37 [notice] 33#33: exit
+2021/06/27 10:57:37 [notice] 35#35: exit
+2021/06/27 10:57:37 [notice] 36#36: exiting
+2021/06/27 10:57:37 [notice] 36#36: exit
+2021/06/27 10:57:37 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2021/06/27 10:57:37 [notice] 1#1: worker process 33 exited with code 0
+2021/06/27 10:57:37 [notice] 1#1: signal 29 (SIGIO) received
+2021/06/27 10:57:37 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2021/06/27 10:57:37 [notice] 1#1: worker process 35 exited with code 0
+2021/06/27 10:57:37 [notice] 1#1: worker process 36 exited with code 0
+2021/06/27 10:57:37 [notice] 1#1: worker process 34 exited with code 0
+2021/06/27 10:57:37 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2021/06/27 10:57:37 [notice] 1#1: exit
+2021/06/27 10:59:10 [notice] 1#1: using the "epoll" event method
+2021/06/27 10:59:10 [notice] 1#1: nginx/1.21.0
+2021/06/27 10:59:10 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/06/27 10:59:10 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/27 10:59:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/27 10:59:10 [notice] 1#1: start worker processes
+2021/06/27 10:59:10 [notice] 1#1: start worker process 33
+2021/06/27 10:59:10 [notice] 1#1: start worker process 34
+2021/06/27 10:59:10 [notice] 1#1: start worker process 35
+2021/06/27 10:59:10 [notice] 1#1: start worker process 36
+2021/06/27 10:59:27 [warn] 34#34: *1 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.24.0.1, server: localhost, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:8101"
