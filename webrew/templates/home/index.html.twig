@@ -3,8 +3,25 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-    <div class="container">
+    <div class="container mb-5">
         <h1 class="text-center">À la recherche d'un stage, d'un contrat d'apprentissage ou encore de professionnalisation ? </h1>
         {% include './partials/_searchbar.html.twig' %}
+    </div>
+    <div class="container-fluid">
+        <div class="row align-items-center h-100 bg-secondary">
+        <div class="col-md-6 m-0 p-0">
+            <video autoplay>
+            <source src="{{ asset('build/images/Webrew.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="col-md-4 ofsset-md-1 h-100 justify-content-center"> 
+            <h2>Webrew ? </h2>
+            <p>
+                Une plateforme pour les étudiants en recherche d'un stage ou d'une alternance. 
+                Regrouper uniquement se type d'offre pour facilité vos recherches.
+            </p>
+        </div>
+    </div>
     </div>
 {% endblock %}
