@@ -114,3 +114,82 @@
 2021/06/27 10:59:10 [notice] 1#1: start worker process 35
 2021/06/27 10:59:10 [notice] 1#1: start worker process 36
 2021/06/27 10:59:27 [warn] 34#34: *1 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.24.0.1, server: localhost, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:8101"
+2021/07/07 19:56:32 [notice] 1#1: using the "epoll" event method
+2021/07/07 19:56:32 [notice] 1#1: nginx/1.21.0
+2021/07/07 19:56:32 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/07/07 19:56:32 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/07/07 19:56:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/07/07 19:56:32 [notice] 1#1: start worker processes
+2021/07/07 19:56:32 [notice] 1#1: start worker process 31
+2021/07/07 19:56:32 [notice] 1#1: start worker process 32
+2021/07/07 19:56:32 [notice] 1#1: start worker process 33
+2021/07/07 19:56:32 [notice] 1#1: start worker process 34
+2021/07/24 12:56:43 [notice] 1#1: using the "epoll" event method
+2021/07/24 12:56:43 [notice] 1#1: nginx/1.21.0
+2021/07/24 12:56:43 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/07/24 12:56:43 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/07/24 12:56:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/07/24 12:56:43 [notice] 1#1: start worker processes
+2021/07/24 12:56:43 [notice] 1#1: start worker process 30
+2021/07/24 12:56:43 [notice] 1#1: start worker process 31
+2021/07/24 12:56:43 [notice] 1#1: start worker process 32
+2021/07/24 12:56:43 [notice] 1#1: start worker process 33
+2021/07/24 13:34:31 [error] 31#31: *38 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.24.0.1, server: localhost, request: "GET /job/search HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost:8101"
+2021/07/24 13:35:36 [error] 31#31: *38 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.24.0.1, server: localhost, request: "GET /job/search HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost:8101"
+2021/07/24 13:36:29 [error] 30#30: *42 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.24.0.1, server: localhost, request: "GET /job/search HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost:8101"
+2021/07/24 13:38:54 [error] 31#31: *46 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.24.0.1, server: localhost, request: "GET /job/search HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost:8101"
+2021/08/02 17:59:27 [notice] 1#1: using the "epoll" event method
+2021/08/02 17:59:27 [notice] 1#1: nginx/1.21.0
+2021/08/02 17:59:27 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/08/02 17:59:27 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/08/02 17:59:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/08/02 17:59:27 [notice] 1#1: start worker processes
+2021/08/02 17:59:27 [notice] 1#1: start worker process 31
+2021/08/02 17:59:27 [notice] 1#1: start worker process 32
+2021/08/02 17:59:27 [notice] 1#1: start worker process 33
+2021/08/02 17:59:27 [notice] 1#1: start worker process 34
+2021/08/02 18:01:15 [error] 32#32: *2 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.24.0.1, server: localhost, request: "GET /job/search HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost:8101"
+2021/08/19 19:08:46 [notice] 1#1: using the "epoll" event method
+2021/08/19 19:08:46 [notice] 1#1: nginx/1.21.0
+2021/08/19 19:08:46 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/08/19 19:08:46 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/08/19 19:08:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/08/19 19:08:46 [notice] 1#1: start worker processes
+2021/08/19 19:08:46 [notice] 1#1: start worker process 31
+2021/08/19 19:08:46 [notice] 1#1: start worker process 32
+2021/08/19 19:08:46 [notice] 1#1: start worker process 33
+2021/08/19 19:08:46 [notice] 1#1: start worker process 34
+2021/08/19 20:36:44 [warn] 33#33: *1 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.24.0.1, server: localhost, request: "GET /job HTTP/1.1", upstream: "fastcgi://172.24.0.3:9000", host: "localhost:8101"
+2021/08/19 20:44:20 [warn] 32#32: *18 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 172.24.0.1, server: localhost, request: "GET /job/search HTTP/1.1", upstream: "fastcgi://172.24.0.3:9000", host: "localhost:8101"
+2021/08/19 20:54:54 [warn] 31#31: *28 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/3/00/0000000003 while reading upstream, client: 172.24.0.1, server: localhost, request: "GET /job/search HTTP/1.1", upstream: "fastcgi://172.24.0.3:9000", host: "localhost:8101"
+2021/08/20 15:47:51 [notice] 1#1: using the "epoll" event method
+2021/08/20 15:47:51 [notice] 1#1: nginx/1.21.0
+2021/08/20 15:47:51 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/08/20 15:47:51 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/08/20 15:47:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/08/20 15:47:51 [notice] 1#1: start worker processes
+2021/08/20 15:47:51 [notice] 1#1: start worker process 35
+2021/08/20 15:47:51 [notice] 1#1: start worker process 36
+2021/08/20 15:47:51 [notice] 1#1: start worker process 37
+2021/08/20 15:47:51 [notice] 1#1: start worker process 38
+2021/08/20 15:59:25 [error] 35#35: *15 FastCGI sent in stderr: "PHP message: 2021-08-20T15:59:25+00:00 [critical] Uncaught Exception: Cannot autowire service "App\Security\EmailVerifier": argument "$helper" of method "__construct()" has type "SymfonyCasts\Bundle\VerifyEmail\VerifyEmailHelperInterface" but this class was not found" while reading upstream, client: 172.24.0.1, server: localhost, request: "GET /register HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost:8101"
+2021/08/23 18:30:13 [notice] 1#1: using the "epoll" event method
+2021/08/23 18:30:13 [notice] 1#1: nginx/1.21.0
+2021/08/23 18:30:13 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/08/23 18:30:13 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/08/23 18:30:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/08/23 18:30:13 [notice] 1#1: start worker processes
+2021/08/23 18:30:13 [notice] 1#1: start worker process 30
+2021/08/23 18:30:13 [notice] 1#1: start worker process 31
+2021/08/23 18:30:13 [notice] 1#1: start worker process 32
+2021/08/23 18:30:13 [notice] 1#1: start worker process 33
+2021/08/23 18:31:28 [notice] 1#1: using the "epoll" event method
+2021/08/23 18:31:28 [notice] 1#1: nginx/1.21.0
+2021/08/23 18:31:28 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/08/23 18:31:28 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/08/23 18:31:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/08/23 18:31:28 [notice] 1#1: start worker processes
+2021/08/23 18:31:28 [notice] 1#1: start worker process 31
+2021/08/23 18:31:28 [notice] 1#1: start worker process 32
+2021/08/23 18:31:28 [notice] 1#1: start worker process 33
+2021/08/23 18:31:28 [notice] 1#1: start worker process 34
