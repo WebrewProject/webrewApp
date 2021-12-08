@@ -47,16 +47,16 @@ line-height:28px;
                 Une plateforme pour les étudiants en recherche d'un stage ou d'une alternance.
                 Regrouper uniquement se type d'offre pour facilité vos recherches.</p>
             <div class="p-4 rounded shadow-lg border border-light" style="background-color:rgba(255,255,255,0.7)">
-                <form>
+                <form method="post">
                     <div class="row">
                         <div class="col-md-4 offset-md-1">
-                            <input type="text" class="form-control form-control-lg shadow-sm" placeholder="Metier...">
+                            <input type="text" class="form-control form-control-lg shadow-sm" placeholder="Metier..." name="job">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control form-control-lg shadow-sm" placeholder="Localisation...">
+                            <input type="text" class="form-control form-control-lg shadow-sm" placeholder="Localisation..." name="city">
                         </div>
                         <div class="col-2">
-                            <button class="btn btn-danger btn-block shadow-sm" type="submit"><span
+                            <button class="btn btn-danger btn-block shadow-sm" type="submit" name="submit"><span
                                     class="d-md-inline-block d-none mr-2">Rechercher</span>
                                 <iclass="lni lni-arrow-right"></i>
                             </button>
