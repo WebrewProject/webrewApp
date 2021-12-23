@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+<div class="container">
+<form method="post">
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            Vous êtes connecté en tant que {{ app.user.username }}, <a href="{{ path('app_logout') }}">Deconnexion</a>
+        </div>
+    {% endif %}
+
+    <h1 class="h3 mb-3 font-weight-normal">Connexion</h1>
+    <label for="inputEmail">Adresse Email</label>
+    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+    <label for="inputPassword">Mot de passe</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+
+    <div class="d-flex justify-content-between align-items-center mb-4 mt-3">
+            <!-- Checkbox -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" name="_remember_me" id="_remember_me" />
+              <label class="form-check-label" for="_remember_me">
+               Se souvenir de moi 
+              </label>
+            </div>
+            <a href="#!" class="text-body">Mot de passe oublié ?</a>
+          </div>
+
+    <button class="btn btn-lg btn-primary" type="submit">
+        Connexion
+    </button>
+       <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte ? <a href="register"
+                class="link-danger">S'inscrire</a></p>
+</form>
+</div>
+{% endblock %}

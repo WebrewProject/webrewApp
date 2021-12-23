@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.btn {
+    padding: 14px 26px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn-danger {
+    background-color: #e34c43;
+    border-color: #e34c43;
+}
+.banner-image{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(33, 47, 69, 0.8)), url({{asset('build/images/herobanner2.jpg')}});
+    background-size: cover;
+    background-position: center;
+}
+::placeholder {
+font-size:14px;
+font-weight:500;
+}
+.form-control {
+    border-color: #ebebeb;
+}
+.form-control-lg {
+    height: calc(1.6em + 1rem + 2px);
+}
+.aa{
+line-height:28px;    
+}
+</style>
+<div class="container-fluid banner-image py-5">
+    <div class="row py-5 align-items-center">
+        <div class="col-12 text-center">
+            <h5 class="display-4 mb-4 font-weight-bold text-white mt-5">À la recherche d'un stage, d'un contrat
+                d'apprentissage ou encore de professionnalisation ?</h5>
+            <p class="h5 col-md-10 mx-auto pb-5 mb-5 text-white-50 aa">
+                Une plateforme pour les étudiants en recherche d'un stage ou d'une alternance.
+                Regrouper uniquement se type d'offre pour facilité vos recherches.</p>
+            <div class="p-4 rounded shadow-lg border border-light" style="background-color:rgba(255,255,255,0.7)">
+                <form method="post">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <input type="text" class="form-control form-control-lg shadow-sm" placeholder="Metier..." name="job">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control form-control-lg shadow-sm" placeholder="Localisation..." name="city">
+                        </div>
+                        <div class="col-2">
+                            <button class="btn btn-danger btn-block shadow-sm" type="submit" name="submit"><span
+                                    class="d-md-inline-block d-none mr-2">Rechercher</span>
+                                <iclass="lni lni-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mb-5">
+
+</div>
+
+{% endblock %}
